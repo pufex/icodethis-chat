@@ -1,0 +1,102 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Chat</title>
+</head>
+
+<body>
+
+    <div class="app">
+        <div class="messages-container">
+            <nav class="nav">
+                <section class="nav-left">
+                    <button class="btn btn--search"></button>
+                    <div class="searchbar-container">
+                        <input
+                                type="text"
+                                class="searchbar"
+                                id="searchbar"
+                                autocomplete="false"
+                        >
+                    </div>
+                </section>
+                <section class="nav-right">
+                    <button class="btn btn--unknown"></button>
+                </section>
+            </nav>
+            <main class="messages">
+                <div class="message">
+                    <img class="message-profile"
+                            src="https://randomuser.me/api/portraits/men/50.jpg"
+                            alt=""
+                        >
+                    <div class="message-content">
+                        <div class="message-title">
+                            <span class="message-name">
+                                    Jacob
+                                </span>
+                            <span class="message-unread">
+                                    1
+                                </span>
+                        </div>
+                        <div class="message-description">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                        </div>
+                    </div>
+                    <div class="message-time">
+                        23/12/23
+                    </div>
+                </div>
+            </main>
+        </div>
+        <div class="chatbox-container">
+            <nav class="chatbox-nav">
+                <section class="chatbox-nav--left">
+                    <button class="btn btn--chatlog btn--goBack"></button>
+                </section>
+                <section class="chatbox-nav--middle">
+                    <img
+                            class="chatbox-nav__profile"
+                        >
+                    <span class="chatbox-nav__name"></span>
+                </section>
+                <section class="chatbox-nav--right">
+                    <button class="btn btn--chatlog btn--chatboxOptions"></button>
+                </section>
+            </nav>
+            <main class="chatbox-main">
+                <div class="chatbox-message-container user">
+                    <img src="https://static.vecteezy.com/system/resources/thumbnails/009/292/244/small/default-avatar-icon-of-social-media-user-vector.jpg" alt="" class="chatbox-profile">
+                    <div class="chatbox-message">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam provident impedit quod ipsam
+                        laborum?
+                        Eos nam corporis itaque, aliquid labore rem officiis praesentium quasi vero fugit iure unde
+                        harum ex?
+                    </div>
+                </div>
+                <div class="chatbox-message-container foreign">
+                    <img src="https://randomuser.me/api/portraits/men/70.jpg" alt="" class="chatbox-profile">
+                    <div class="chatbox-message">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam provident impedit quod ipsam
+                        laborum?
+                        Eos nam corporis itaque, aliquid labore rem officiis praesentium quasi vero fugit iure unde
+                        harum ex?
+                    </div>
+                </div>
+            </main>
+            <form class="chatbox-form">
+                <input
+                        type="text"
+                        class="chatbox-input"
+                        placeholder="Type a message here"
+                    >
+                <button class="btn btn--chatlog btn--sendMessage" type="submit"></button>
+            </form>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
